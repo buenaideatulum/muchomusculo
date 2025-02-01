@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App de Músculos y Ejercicios</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Explora los Músculos y Ejercicios</h1>
+  <div class="container">
+    <!-- Imagen del cuerpo humano con áreas interactivas -->
+    <img src="cuerpo_humano.png" alt="Cuerpo Humano" usemap="#muscleMap">
+    <map name="muscleMap">
+      <!-- Definir áreas interactivas (coordenadas x1,y1,x2,y2) -->
+      <area shape="rect" coords="100,200,150,250" alt="Bíceps" data-muscle="biceps">
+      <area shape="rect" coords="200,300,250,350" alt="Cuádriceps" data-muscle="cuadriceps">
+      <area shape="rect" coords="300,400,350,450" alt="Abdominales" data-muscle="abdominales">
+    </map>
+
+    <!-- Sección para mostrar la información del músculo -->
+    <div id="muscle-info">
+      <h2 id="muscle-name"></h2>
+      <p id="muscle-description"></p>
+      <ul id="exercises-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
